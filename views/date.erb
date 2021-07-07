@@ -1,0 +1,5 @@
+
+<% date = DateTime.new(2020, 9, 15) %>
+<% specific_date = date.to_s.split("-") %>
+<% exact_date = specific_date[2].split("").first(2).join("") %>
+<p><%= "The date is Tuesday, September #{exact_date}, #{specific_date[0]}" %></p>
